@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 5 — Forever 💕</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💕</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="chapter5">
+
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <nav class="topbar">
+    <span class="brand"><a href="index.html">Our Story ♥</a></span>
+    <span class="chapter-ind">CHAPTER 5 OF 5 — THE FINALE</span>
+  </nav>
+
+  <div class="lock-overlay" id="lockOverlay">
+    <div class="lock-box glass">
+      <div class="locked-icon">🔒</div>
+      <p id="overlayTitle">This chapter is locked...</p>
+      <div class="hint" id="overlayHint"></div>
+      <input type="password" id="overlayKey" placeholder="Enter the keypass..." autocomplete="off">
+      <button class="btn" id="overlayBtn">Unlock 💖</button>
+      <div class="error-msg" id="overlayErr"></div>
+    </div>
+  </div>
+
+  <main class="container hidden" id="content">
+    <div class="chapter-tag">~ Our Love Story ~</div>
+
+    <section class="chapter-card glass">
+      <h2>Chapter 5 — Forever</h2>
+      <div class="big-heart">💖</div>
+      <p>This isn't the end of the story. It's just the end of the beginning.</p>
+      <p>Our chapters are still being written — in morning coffees, late-night talks, silly fights, and quiet forgiveness. Here's to every page we haven't turned yet. 💕</p>
+    </section>
+
+    <div class="counter-box glass">
+      <div class="counter-label">⏳ And we've been us for...</div>
+      <div class="counter-days"><span class="d-days">0</span> <small>days</small></div>
+      <div class="counter-sub"><span class="d-h">00</span>h : <span class="d-m">00</span>m : <span class="d-s">00</span>s — and counting forever 💫</div>
+    </div>
+
+    <p class="music-note">🎵 Tap the music note (bottom right) to play our song</p>
+
+    <div class="nav-btns">
+      <button class="btn" onclick="location.href='chapter4.html'">← Previous</button>
+      <button class="btn" onclick="resetStory()">Read Again 🔄</button>
+    </div>
+
+    <div class="chapter-dots" id="progressDots"></div>
+  </main>
+
+  <div class="music-player" id="musicPlayer">
+    <div class="eq"><span></span><span></span><span></span><span></span></div>
+    <button class="music-btn" id="musicBtn" title="Play our song 🎵">🎵</button>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="music.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

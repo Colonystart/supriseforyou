@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 3 — Falling 💕</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💕</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="chapter3">
+
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <nav class="topbar">
+    <span class="brand"><a href="index.html">Our Story ♥</a></span>
+    <span class="chapter-ind">CHAPTER 3 OF 5</span>
+  </nav>
+
+  <div class="lock-overlay" id="lockOverlay">
+    <div class="lock-box glass">
+      <div class="locked-icon">🔒</div>
+      <p id="overlayTitle">This chapter is locked...</p>
+      <div class="hint" id="overlayHint"></div>
+      <input type="password" id="overlayKey" placeholder="Enter the keypass..." autocomplete="off">
+      <button class="btn" id="overlayBtn">Unlock 💖</button>
+      <div class="error-msg" id="overlayErr"></div>
+    </div>
+  </div>
+
+  <main class="container hidden" id="content">
+    <div class="chapter-tag">~ Our Love Story ~</div>
+
+    <section class="chapter-card glass">
+      <h2>Chapter 3 — Falling</h2>
+      <p>They say falling in love is scary. They're wrong. Falling in love with you felt like finally being caught after a lifetime of falling.</p>
+      <p>Every song made sense. Every poem was about you. The world didn't change — but the way I saw it did.</p>
+    </section>
+
+    <div class="lock-box glass next-lock" id="nextLock">
+      <div class="locked-icon">🔐</div>
+      <p>Chapter 4 is sealed with a different key...</p>
+      <div class="hint" id="nextHint"></div>
+      <input type="password" id="nextKey" placeholder="Key for Chapter 4..." autocomplete="off">
+      <button class="btn" id="nextBtn">Unlock Chapter 4 💗</button>
+      <div class="error-msg" id="nextErr"></div>
+    </div>
+
+    <div class="nav-btns">
+      <button class="btn" onclick="location.href='chapter2.html'">← Previous</button>
+      <button class="btn" onclick="location.href='index.html'">🏠 Home</button>
+    </div>
+
+    <div class="chapter-dots" id="progressDots"></div>
+  </main>
+
+  <div class="music-player" id="musicPlayer">
+    <div class="eq"><span></span><span></span><span></span><span></span></div>
+    <button class="music-btn" id="musicBtn" title="Play our song 🎵">🎵</button>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="music.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

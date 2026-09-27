@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A love story written in chapters — sealed with secret keys.">
+  <title>Our Love Story 💕</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💕</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="index">
+
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <nav class="topbar">
+    <span class="brand">Our Story ♥</span>
+    <span class="chapter-ind">A LOVE STORY IN 5 CHAPTERS</span>
+  </nav>
+
+  <main class="container">
+    <div class="script">Welcome to Our Story</div>
+    <h1>❤️ A Love Written in Chapters ❤️</h1>
+    <p class="intro-text">
+      Some stories aren't written in books — they're written in moments,
+      glances, and heartbeats. This one is ours.<br><br>
+      Every chapter is sealed with its own secret key. Only you and I hold them all.
+    </p>
+
+
+    <div class="lock-box glass">
+      <div class="locked-icon">🔒</div>
+      <p>Chapter 1 is locked...</p>
+      <div class="hint" id="introHint"></div>
+      <input type="password" id="introKey" placeholder="Enter the keypass..." autocomplete="off">
+      <button class="btn" id="introBtn">Unlock Chapter 1 💖</button>
+      <div class="error-msg" id="introErr"></div>
+    </div>
+
+    <div class="chapter-dots" id="progressDots"></div>
+  </main>
+
+  <div class="music-player" id="musicPlayer">
+    <div class="eq"><span></span><span></span><span></span><span></span></div>
+    <button class="music-btn" id="musicBtn" title="Play our song 🎵">🎵</button>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="music.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
