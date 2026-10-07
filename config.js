@@ -28,7 +28,7 @@ const CONFIG = {
     },
     {
       file:  "chapter3.html",
-      key:   "29 september",
+      key:   "27 september",
       hint:  "💡 Hint: Unwrapp Chocolate 3\u2026",
       title: "Chapter 3 — Falling"
     },
